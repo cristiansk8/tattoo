@@ -13,8 +13,9 @@
     Tatto tatto
   </header>
   <body>
-  <div class="fomrulario">
+  <div class="container">
     <form class="" method="POST" action="control.php">
+    <p> Ingresar cliente</p>
       <div class="">
       <p>Nombre</p> <input type="text" name="nombre" value="">
       </div>
@@ -66,9 +67,11 @@
         <p>precio</p>
         <input type="text" name="precio" value="">
       </div>
-      <div class="checkboxy">
-              <input type="submit" name="enviarCliente" id="submit" value="enviar" type="checkbox" />
-          </div>
+<div class="">
+  <input class="btn btn-success" type="submit" name="enviarCliente" id="submit" value="enviar" type="checkbox" />
+</div>
+
+
 
 
 

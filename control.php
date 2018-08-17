@@ -68,3 +68,26 @@ if (isset($_POST['enviarArtista'])) {
     header('Location:artista.php');
 
 }
+
+$consulta=mysql_query("SELECT*FORM cliente");
+echo "
+<table>
+   <tr>
+      <th>nombre</th>
+      <th>cedula</th>
+      <th>artista</th>
+      <th>precio</th>
+  </tr>
+
+";
+while ($registro = mysql_fetch_array($consulta)) {
+echo "
+<tr>
+   <td>.$registro["nombre"]</td>
+    <td>.$registro["cedula"]</td>
+    <td>.$registro["artista"]</td>
+    <td>.$registro["precio"]</td>
+</tr>
+";
+}
+echo "<table>";

@@ -18,12 +18,13 @@
       });
 
     </script>
-  <p>  Ingresar artista</p>
+
 
   </header>
   <body>
     <form class="" method="POST"  enctype="multipart/form-data" action="control.php">
-      <div class="formularioArtista">
+      <div class="container">
+          <p> Ingresar artista</p>
         <div class="">
             <p>nombre</p>  <input type="text" name="nombreart" value="">
         </div>
@@ -46,8 +47,8 @@
         <div class="">
           <p>foto</p> <input type="file" name="fotoart" value="">
         </div>
-        <div class="checkboxy">
-                <input type="submit" name="enviarArtista" id="submit" value="enviar" type="checkbox" />
+        <div class="">
+                <input class="btn btn-success" type="submit" name="enviarArtista" id="submit" value="enviar" type="checkbox" />
             </div>
       </div>
     </form>
